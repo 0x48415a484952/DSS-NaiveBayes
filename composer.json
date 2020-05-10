@@ -1,0 +1,24 @@
+{
+    "name": "hazhir/samane-naive-bayes",
+    "description": "classification in naive bayes",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hazhir Ahmadzadeh",
+            "email": "hazhir1811@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Hazhir\\": "src/"
+        }
+    },
+    "require": {
+        "php-ai/php-ml": "^0.8.0"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    }
+}

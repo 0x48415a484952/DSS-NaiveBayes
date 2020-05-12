@@ -6,20 +6,24 @@ use Hazhir\CustomerRiskPrediction;
 
 require '../vendor/autoload.php';
 
-//phpinfo();
-
 $customersRisk = new CustomerRiskPrediction();
-//$customerResults = $customersRisk->predictRisk([
-//    ['Excellent', '5 Years', 'Low'],
-//    ['Poor', '5 Years', 'Low']
-//]);
 
 
-$customersRisk->createDecisionTree();
 
-//foreach ($customerResults as $key => $result) {
-//    echo '<pre>';
-//        echo 'User'. ($key + 1) . ': ' . $result;
-//        echo '<br/>';
-//    echo '</pre>';
-//}
+//question number one الف
+//$customersRisk->predictFirstUserRisk();
+
+//question number two ب
+//echo $customersRisk->createDecisionTree();
+
+//question number three ج
+$result = $customersRisk->createDecisionTree();
+echo $result['rules'];
+echo 'final result: ' . $result['prediction'];
+
+
+//second part of the homework
+//echo $customersRisk->irisDecisionTree();
+//print_r($customersRisk->irisNaiveBayes());
+
+

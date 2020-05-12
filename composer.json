@@ -15,7 +15,8 @@
         }
     },
     "require": {
-        "php-ai/php-ml": "^0.8.0"
+        "rubix/ml": "dev-master",
+        "ext-json": "*"
     }
     ,
     "require-dev": {
